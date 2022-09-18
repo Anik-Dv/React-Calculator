@@ -1,23 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const calculatDigits = () => {
+    const digits = [];
+    for (let i = 1; i < 10; i++) {
+      digits.push(<button key={i}>{i}</button>);
+    }
+    return digits;
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='calculator'>
+
+        <div className='result-display'>
+          <span className='showInput'>0</span>
+          <br/>
+          <span className='result'>(0)</span>
+        </div>
+
+        <div className='secondary-btn'>
+          <button>%</button>
+          <button>+</button>
+          <button>-</button>
+          <button>x</button>
+          <button>÷</button>
+          <button>DEL</button>
+          <button>CE</button>
+
+        </div>
+
+        <div className='digits-num'>
+          <div className='digits'>
+
+            {calculatDigits()}
+            <button>.</button>
+            <button>0</button>
+            <button style={{ backgroundColor: "#e90a72", borderRadius: "10px" }}>=</button>
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,13 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: var(--light);
+  font-family: 'Linden Hill', serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+
+  --primary: #e7d910;
+  --secondary: #8c38ff;
+  --display: #050304;
+  --dark: #0c0c0c;
+  --light: #eee;
+  --text-color-d: #0c0c0c;
+  --text-color-l: white;
+
+}
+
+.App {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: auto;
+  height: 540px;
+  background-color: hsl(268deg 90% 49% / 76%);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0px 2px 64px rgba(19, 18, 18, 0.2);
+  margin: 60px;
+}
+
+.result-display {
+  padding-top: 22px;
+    text-align: right;
+    background-color: var(--display);
+    color: var(--light);
+    font-size: 24px;
+    font-weight: 550;
+    height: 153px;
+
+}
+
+.result-display {
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+}
+
+.showInput{
+  font-size: 52.7px;
+  padding: 12px 33px 0px;
+}
+
+.result{
+  font-size: 32.7px;
+  padding: 10px 30px 0px;
+}
+
+button {
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 16px;
+  font-size: 23px;
+  font-weight: 600;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  transition: 0.4s;
+
+}
+
+.digits button:hover {
+  opacity: 0.7;
+  color: white;
+  background-color: rgb(182, 33, 95);
+}
+
+.secondary-btn button:hover {
+  opacity: 0.7;
+  color: white;
+  background-color: rgba(86, 44, 134, 0.808);
+}
+
+.symbol-btn {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px 8px 11px;
+  background-color: #e90a72;
+}
+
+.symbol-btn span {
+  background-color: #e90a72;
+  border-color: rgb(56, 56, 56);
+  padding: 7px 19px 8px;
+  font-size: 16px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  justify-content: center;
+  margin: 0px 2px 0px;
+  cursor: pointer;
+
+}
+
+.secondary-btn {
+  flex: 1 1 0%;
+  font-weight: 700;
+  font-size: 16px;
+  font-size: small;
+  justify-content: center;
+  background-color: #e90a72;
+  height: 67px;
+}
+
+.secondary-btn button {
+  height: 67px;
+  background-color: transparent;
+  border-style: none;
+  font-size: 18px;
+  margin: -2px 2px 0px;
+  margin-left: 4px;
+  padding: 9px 19px 0px;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+  height: 256px;
+  width: 390px;
+  margin-top: 20px;
+}
+
+.digits-num {
+  margin: 2px 2px 0px;
+  margin-left: 5px;
+}
+
+.digits button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background-color: hsl(268deg 83% 59%);
+  border-style: none;
 }

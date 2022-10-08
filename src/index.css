@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Linden+Hill&display=swap');
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: var(--light);
-  font-family: 'Linden Hill', serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 :root {
@@ -45,6 +44,7 @@ body {
     font-size: 24px;
     font-weight: 550;
     height: 153px;
+    display: block;
 
 }
 
@@ -86,7 +86,7 @@ button {
   background-color: rgb(182, 33, 95);
 }
 
-.secondary-btn button:hover {
+.secondarybtn button:hover {
   opacity: 0.7;
   color: white;
   background-color: rgba(86, 44, 134, 0.808);
@@ -104,14 +104,14 @@ button {
   border-color: rgb(56, 56, 56);
   padding: 7px 19px 8px;
   font-size: 16px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   justify-content: center;
   margin: 0px 2px 0px;
   cursor: pointer;
 
 }
 
-.secondary-btn {
+.secondarybtn {
   flex: 1 1 0%;
   font-weight: 700;
   font-size: 16px;
@@ -121,7 +121,7 @@ button {
   height: 67px;
 }
 
-.secondary-btn button {
+.secondarybtn button {
   height: 67px;
   background-color: transparent;
   border-style: none;
